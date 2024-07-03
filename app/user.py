@@ -2,7 +2,7 @@ from . import api_router
 from fastapi import FastAPI, status, HTTPException, Depends
 from pydantic import BaseModel
 from bson import ObjectId
-from bson.errors import InvalidId
+from bson.objectid import InvalidId
 from app.database import users_collection as collection
 from app.schemas import UserOut, UserAuth, TokenSchema, SystemUser, UpdateUserRequest
 from app.utils import get_hashed_password, verify_password, create_access_token
