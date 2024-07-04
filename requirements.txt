@@ -3,3 +3,4 @@ dnspython==2.6.1
 pymongo==4.8.0
 python-dateutil==2.9.0.post0
 six==1.16.0
+uvicorn==0.30.1
